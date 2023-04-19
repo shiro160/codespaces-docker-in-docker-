@@ -1,0 +1,1 @@
+FROM ghcr.io/h16110s/codespace-container-test/codespace:latest
