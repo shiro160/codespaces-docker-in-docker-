@@ -1,6 +1,3 @@
-# -------------------------------------------------------------------------------------------------------
-# https://github.com/microsoft/vscode-dev-containers/blob/main/containers/ubuntu/.devcontainer/Dockerfile
-# -------------------------------------------------------------------------------------------------------
 FROM ubuntu:22.04
 
 # Options for setup script
@@ -10,12 +7,12 @@ ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
-RUN apt update && apt install -y \
+RUN apt-get update && apt-get install -y \
     git \
     curl \
     vim \
     htop \
-    ca-certificates \
+    ca-certificates
 
-# Dockerをインストール
+# Docker from DockerするためにDockerをインストールします
 RUN curl -fsSL https://get.docker.com | sh
