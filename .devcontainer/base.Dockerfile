@@ -1,10 +1,7 @@
 # -------------------------------------------------------------------------------------------------------
 # https://github.com/microsoft/vscode-dev-containers/blob/main/containers/ubuntu/.devcontainer/Dockerfile
 # -------------------------------------------------------------------------------------------------------
-
-# [Choice] Ubuntu version (use jammy or bionic on local arm64/Apple Silicon): jammy, focal, bionic
-ARG VARIANT="focal"
-FROM buildpack-deps:${VARIANT}-curl
+FROM ubuntu:22.04
 
 # Options for setup script
 ARG INSTALL_ZSH="true"
