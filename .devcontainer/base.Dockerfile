@@ -16,3 +16,7 @@ RUN apt-get update && apt-get install -y \
 
 # Docker from DockerするためにDockerをインストールします
 RUN curl -fsSL https://get.docker.com | sh
+
+
+ENTRYPOINT [ "/usr/local/share/docker-init.sh" ]
+CMD [ "sleep", "infinity" ]
